@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testimonials</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$(".testimonialSlides > div:gt(0)").hide();
+			setInterval(function() {
+				$('.testimonialSlides > div:first')
+					.fadeOut(1000)
+					.next()
+					.fadeIn(1000)
+					.end()
+					.appendTo('.testimonialSlides')
+			}, 8000);
+			console.log('end')
+		});
+	</script>
+</head>
+<body>
+	<div class="testimonialSlides">
+		<!-- <div class="testimonialContainer"> -->
+
+			<div class="testimonialDivs">
+				<div class="quoteDiv">
+					<img class="beginQuotes" src="assets/images/beginQuotes.png">
+
+					<p class="testimonialText">To everyone at VolleyballUSA.com - Thanks for all the help. We love our courts! The Bazooka Net System is great. I appreciate al l the help we received through the ordering process. We couldn't have done it all without you.</p>
+					
+					<img class="endQuotes" src="assets/images/endQuotes.png">
+				</div>
+
+				<div class="testimonialName">
+					<span class="nameDash"></span>
+					<p>B. Moody</p>
+				</div>
+				
+			</div><!-- end testimonialDivs -->
+
+			<div class="testimonialDivs">
+				<div class="quoteDiv">
+					<img class="beginQuotes" src="assets/images/beginQuotes.png">
+
+					<p class="testimonialText">The equipment you supplied was first class. Best beach pole pads we've ever used and the nets looked amazing. The entire received rave reviews from athletes and families.</p>
+					
+					<img class="endQuotes" src="assets/images/endQuotes.png">
+				</div>
+
+				<div class="testimonialName">
+					<span class="nameDash"></span>
+					<p>T. Giarla</p>
+				</div>
+				
+			</div><!-- end testimonialDivs -->
+
+			<div class="testimonialDivs">
+				<div class="quoteDiv">
+					<img class="beginQuotes" src="assets/images/beginQuotes.png">
+
+					<p class="testimonialText">I wanted to thank you very much again, for your generous partnership with my Monterey Beach events. Our main event this weekend, the 5th Annual Monterey Beach Open was another successful event! It's partners like VolleyballUSA.com that makes it the best junior beach volleyball event in all of Central and Northern California!</p>
+					
+					<img class="endQuotes" src="assets/images/endQuotes.png">
+				</div>
+
+				<div class="testimonialName">
+					<span class="nameDash"></span>
+					<p>J. Companion</p>
+				</div>
+				
+			</div><!-- end testimonialDivs -->
+
+		<!-- </div> -->
+	</div>
+</body>
+</html>
